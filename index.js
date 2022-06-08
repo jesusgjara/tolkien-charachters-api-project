@@ -123,7 +123,7 @@ let tolkienCharacters = {
 }
 
 app.get('/', (req,res) => {
-    res.send('<h1>Welcome to Tolkien Characters API</h1><h2>Please use https://tolkien-characters-api-project.herokuapp.com/api/<character-name></h2>')
+    res.send('<h1>Welcome to Tolkien Characters API</h1><p>Please use https://tolkien-characters-api-project.herokuapp.com/api/character-name</p>')
 })
 
 app.get('/api', (req,res) => {
