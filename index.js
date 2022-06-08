@@ -2,9 +2,13 @@
 const express = require('express')
 const app = express()
 const cors = require('cors')
+const MongoClient = require('mongodb').MongoClient
+const connectionString = 'mongodb+srv://jesusgjara:HUjJ6rHL49MQIu1P@cluster0.qg9dj.mongodb.net/?retryWrites=true&w=majority'
 const PORT = process.env.PORT || 3030
 
 app.use(cors())
+app.use(express.json())
+
 
 //Database
 let tolkienCharacters = {
